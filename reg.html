@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Terraria</title>
+    <meta name="description" content="Terraria">
+    <meta property="og:title" content="Terraria">
+    <meta property="og:description" content="Terraria">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/ru/5/52/Terraria_Logo.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <body>
+        <form>
+            <h2>Register</h2>
+            <div id="registerFills">
+                <div>
+                    <label for="username">Username</label> <br>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div>
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="password">Password</label> <br>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <label for="password">Confirm Password</label> <br>
+                    <input type="password" name="password" id="conPassword">
+                </div>
+                <div>
+                    <label for="bithday">Birthday</label> <br>
+                    <input type="date" name="bithday" id="bithday">
+                </div>
+                <div>
+                    <label for="sity">Sity</label> <br>
+                    <select name="sity" id="sity">
+                        <option value="Kyiv">Kyiv</option>
+                        <option value="Sumy">Sumy</option>
+                        <option value="Kharkiv">Kharkiv</option>
+                        <option value="Odessa">Odessa</option>
+                        <option value="Kherson">Kherson</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="radio" id="genderMale" name="gender" value="gender">
+                    <label for="genderMale">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="genderFemale" name="gender" value="gender">
+                    <label for="genderFemale">Female</label>
+                </div>
+            </div>
+            <div>
+                <label for="aboutYou">About you</label><br>
+                <textarea id="aboutYou" name="aboutYou"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree">I agree with terms and conditions</label>
+            </div>
+            <div>
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </body>
+
+</html>
