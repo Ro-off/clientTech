@@ -11,7 +11,7 @@
     #pageContainer {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 50vh max-content min-content 200%;
+        grid-template-rows: 50vh max-content min-content max-content;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
