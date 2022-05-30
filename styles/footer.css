@@ -1,0 +1,13 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    background: rgb(6, 84, 73);
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'Pridi', serif;
+    color: aliceblue;
+}

@@ -1,0 +1,192 @@
+#registerLightbox {
+    position: fixed;
+    display: none;
+    flex-direction: row-reverse;
+    width: 100vw;
+    top: 0px;
+    height: 100%;
+    z-index: 2;
+}
+
+#loginLightbox {
+    position: fixed;
+    display: none;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 100%;
+    bottom: 0px;
+    top: 0px;
+    z-index: 2;
+}
+
+.authForm {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content max-content;
+    grid-row-gap: 10px;
+    background: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: max-content;
+    height: max-content;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'Pridi', serif;
+    margin-top: 70px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.1s all;
+}
+
+.authForm div {
+    justify-content: left;
+}
+
+.authForm input[type="checkbox"] {
+    margin-left: 0;
+    filter: hue-rotate(300deg);
+}
+
+.authForm input {
+    margin-bottom: 0px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid rgb(11, 168, 24);
+}
+
+.authForm input:hover {
+    box-shadow: rgb(11, 168, 24) 0px 1px 1px;
+    transition: 0.2s all;
+}
+
+.authForm input:focus {
+    outline: none;
+    box-shadow: rgb(11, 168, 24) 0px 1px 1px;
+    transition: 0.2s all;
+}
+
+.authForm select {
+    width: 100%;
+    margin-bottom: 0px;
+    border: none;
+    padding: 5px;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    border-bottom: 1px solid rgb(11, 168, 24);
+    background: rgb(255, 255, 255);
+}
+
+.authForm select:hover {
+    box-shadow: rgb(11, 168, 24) 0px 1px 1px;
+    transition: 0.2s all;
+}
+
+.authForm select:focus {
+    outline: none;
+    box-shadow: rgb(11, 168, 24) 0px 1px 1px;
+    transition: 0.2s all;
+}
+
+.authForm label {
+    margin-top: 20px;
+    color: rgb(73, 73, 73);
+}
+
+.authForm h2 {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.authForm input[type="submit"] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+.authForm input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+}
+
+.authForm input[type="submit"]:hover {
+    color: white;
+    background: rgb(11, 168, 24);
+}
+
+.authForm input[type="date"] {
+    width: 100%;
+}
+
+#registerFills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, max-content);
+    gap: 15px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.authForm textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 500px;
+    border: none;
+    border-bottom: 1px solid rgb(11, 168, 24);
+    background: rgb(245, 245, 245);
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+
+.authForm textarea:hover {
+    box-shadow: rgb(11, 168, 24) 0px 1px 1px;
+    transition: 0.2s all;
+}
+
+.authForm textarea:focus {
+    outline: none;
+    box-shadow: rgb(11, 168, 24) 0px 1px 1px;
+    transition: 0.2s all;
+}
+
+.authForm input[type="radio"] {
+    margin-left: 0;
+    filter: hue-rotate(300deg);
+}
+
+.closeButton {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border-style: solid;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeButton:hover {
+    border: solid 2px rgb(11, 168, 24);
+}
+
+.closeButton i {
+    font-size: 24px;
+}
