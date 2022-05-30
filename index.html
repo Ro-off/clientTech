@@ -12,6 +12,8 @@
     <script src="https://kit.fontawesome.com/8c31bff8dc.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+
     <link rel="icon" type="image/png" href="/favicon-32x32.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,6 +63,40 @@
                         ducimus corrupti et omnis nesciunt deserunt nisi, blanditiis quas minima asperiores cumque, ad expedita nostrum dolorem, natus excepturi. Consequatur impedit molestiae eaque eum omnis commodi necessitatibus eligendi officiis. Adipisci,
                         mollitia minus?
                     </p>
+                </div>
+                <div id="calculator">
+                    <h2>Perimeter of a triangle calculator</h2>
+                    <div>
+                        <form>
+                            <div class="inputGroup">
+                                <div id="sideA">
+                                    <input type="text" id="A">
+                                    <label for="A" class="labelCalculator" id="lableA">A</label>
+                                </div>
+
+                                <div id="sideB">
+                                    <input type="text" id="B">
+                                    <label for="B" class="labelCalculator" id="lableB">B</label>
+                                </div>
+
+                                <div id="sideC">
+                                    <input type="text" id="C">
+                                    <label for="C" class="labelCalculator" id="lableC">C</label>
+                                </div>
+
+                            </div>
+                            <div id="additionTipsCalc">
+                                <input type="checkbox" id="ShowAddInfoCheckbox" checked="true">
+                                <label for="checkbox">Show addittion information about mistakes</label>
+                            </div>
+                            <button id="calculate" type="button">Calculate</button>
+                        </form>
+                        <div id="result">
+                            <p>Result</p>
+                            <p id="perimeter">-</p>
+                        </div>
+                    </div>
+                    <script src="scripts/calculator.js"></script>
                 </div>
                 <div id="pricing">
                     <h2>Pricing</h2>

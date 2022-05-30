@@ -1,0 +1,43 @@
+        @media screen and (max-width: 750px) {
+            nav ul {
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+            nav ul li {
+                margin: 15px;
+            }
+            nav ul li a {
+                font-size: 1.2em;
+            }
+            main {
+                grid-template-columns: 1fr;
+            }
+            footer {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+            #registerLightbox {
+                justify-content: center;
+            }
+            .authForm {
+                /* align-self: center; */
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 0px;
+                overflow: scroll;
+            }
+            #registerFills {
+                grid-template-columns: 1fr;
+            }
+            .authForm input[type="submit"] {
+                margin-bottom: 30px;
+            }
+            main div {
+                width: 100%;
+            }
+            #calculator div {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+        }
