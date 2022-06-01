@@ -138,8 +138,12 @@ function addShowAddInfoCheckboxListener() {
     });
 }
 
+//create all listeners
+function createListeners() {
+    checkParameters();
+    addListeners();
+    addCalculateListener();
+    addShowAddInfoCheckboxListener();
+}
 
-checkParameters();
-addListeners();
-addCalculateListener();
-addShowAddInfoCheckboxListener();
+export { createListeners };
