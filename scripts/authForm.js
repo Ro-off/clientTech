@@ -12,36 +12,36 @@ function makeElementHidden(element) {
 
 //create listener for the button "Register"
 function registerListener() {
-    var registerButton = document.querySelector('#register');
+    let registerButton = document.querySelector('#register');
     registerButton.addEventListener('click', function() {
-        var registerLightbox = document.querySelector('#registerLightbox');
+        let registerLightbox = document.querySelector('#registerLightbox');
         makeElementVisible(registerLightbox);
     });
 }
 
 //create listener for the button "Login"
 function loginListener() {
-    var loginButton = document.querySelector('#login');
+    let loginButton = document.querySelector('#login');
     loginButton.addEventListener('click', function() {
-        var loginLightbox = document.querySelector('#loginLightbox');
+        let loginLightbox = document.querySelector('#loginLightbox');
         makeElementVisible(loginLightbox);
     });
 }
 
 //create listener for the button "Close" in the register lightbox
 function closeRegisterListener() {
-    var closeRegisterButton = document.querySelector(`#closeRegister`);
+    let closeRegisterButton = document.querySelector(`#closeRegister`);
     closeRegisterButton.addEventListener('click', function() {
-        var registerLightbox = document.querySelector('#registerLightbox');
+        let registerLightbox = document.querySelector('#registerLightbox');
         makeElementHidden(registerLightbox);
     });
 }
 
 //create listener for the button "Close" in the login lightbox
 function closeLoginListener() {
-    var closeLoginButton = document.querySelector('#closeLogin');
+    let closeLoginButton = document.querySelector('#closeLogin');
     closeLoginButton.addEventListener('click', function() {
-        var loginLightbox = document.querySelector('#loginLightbox');
+        let loginLightbox = document.querySelector('#loginLightbox');
         makeElementHidden(loginLightbox);
     });
 }
