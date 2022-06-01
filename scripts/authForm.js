@@ -12,36 +12,36 @@ function makeElementHidden(element) {
 
 //create listener for the button "Register"
 function registerListener() {
-    var registerButton = document.getElementById('register');
+    var registerButton = document.querySelector('#register');
     registerButton.addEventListener('click', function() {
-        var registerLightbox = document.getElementById('registerLightbox');
+        var registerLightbox = document.querySelector('#registerLightbox');
         makeElementVisible(registerLightbox);
     });
 }
 
 //create listener for the button "Login"
 function loginListener() {
-    var loginButton = document.getElementById('login');
+    var loginButton = document.querySelector('#login');
     loginButton.addEventListener('click', function() {
-        var loginLightbox = document.getElementById('loginLightbox');
+        var loginLightbox = document.querySelector('#loginLightbox');
         makeElementVisible(loginLightbox);
     });
 }
 
 //create listener for the button "Close" in the register lightbox
 function closeRegisterListener() {
-    var closeRegisterButton = document.getElementById('closeRegister');
+    var closeRegisterButton = document.querySelector(`#closeRegister`);
     closeRegisterButton.addEventListener('click', function() {
-        var registerLightbox = document.getElementById('registerLightbox');
+        var registerLightbox = document.querySelector('#registerLightbox');
         makeElementHidden(registerLightbox);
     });
 }
 
 //create listener for the button "Close" in the login lightbox
 function closeLoginListener() {
-    var closeLoginButton = document.getElementById('closeLogin');
+    var closeLoginButton = document.querySelector('#closeLogin');
     closeLoginButton.addEventListener('click', function() {
-        var loginLightbox = document.getElementById('loginLightbox');
+        var loginLightbox = document.querySelector('#loginLightbox');
         makeElementHidden(loginLightbox);
     });
 }
@@ -51,22 +51,20 @@ function closeLoginListener() {
 
 //change filter property of the background image to make it darker and blur it
 function changeBackgroundFiltersToEnable() {
-    let background = document.getElementById('pageContainer');
+    let background = document.querySelector('#pageContainer');
     background.style.backdropFilter = 'blur(5px) brightness(0.5)';
-    let otherElements = document.getElementsByClassName('back');
-    for (let i = 0; i < otherElements.length; i++) {
-        otherElements[i].style.filter = 'blur(5px) brightness(0.5)';
-    }
+    document.querySelectorAll('.back').forEach(element => {
+        element.style.filter = 'blur(5px) brightness(0.5)';
+    });
 }
 
 //change filter property of the background image to make it brighter and unblur it
 function changeBackgroundFiltersToDisable() {
-    let background = document.getElementById('pageContainer');
+    let background = document.querySelector('#pageContainer');
     background.style.backdropFilter = 'blur(0px) brightness(1)';
-    let otherElements = document.getElementsByClassName('back');
-    for (let i = 0; i < otherElements.length; i++) {
-        otherElements[i].style.filter = 'blur(0px) brightness(1)';
-    }
+    let otherElements = document.querySelectorAll('.back').forEach(element => {
+        element.style.filter = 'blur(0px) brightness(1)';
+    });
 }
 
 //create listeners for auth forms
