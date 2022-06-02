@@ -64,15 +64,6 @@ function changeParameterColor(a) {
     }
 }
 
-// //create timer to check if the parameters are valid
-// function createTimer() {
-//     setInterval(function() {
-//         var parameters = getParameters();
-//         changeParameterColor("A");
-//         changeParameterColor("B");
-//         changeParameterColor("C");
-//     }, 100);
-// }
 
 //add listeners into the form elements to check if the parameters are valid
 function addListeners() {
