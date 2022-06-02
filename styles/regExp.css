@@ -8,6 +8,7 @@
     margin: 0 !important;
     grid-column-gap: 10px;
     height: max-content;
+    gap: 10px;
 }
 
 #regExpGrid div {
