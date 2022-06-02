@@ -10,7 +10,9 @@
                 font-size: 1.2em;
             }
             main {
+                width: 100vw;
                 grid-template-columns: 1fr;
+                grid-template-rows: repeat(7, max-content);
             }
             footer {
                 grid-template-columns: 1fr;
@@ -33,8 +35,8 @@
             .authForm input[type="submit"] {
                 margin-bottom: 30px;
             }
-            main div {
-                width: 100%;
+            #calculator {
+                grid-column-end: auto;
             }
             #calculator div {
                 grid-template-columns: 1fr;

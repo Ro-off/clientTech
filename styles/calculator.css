@@ -1,5 +1,6 @@
 #calculator {
-    width: 92%;
+    margin: 13px !important;
+    grid-column-end: span 2;
     height: min-content;
     margin: 0;
 }
