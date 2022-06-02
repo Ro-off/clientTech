@@ -2,15 +2,16 @@
 
 //create function thah recive regExp and id and rturn true if the id match the regExp
 function checkRegExp(regExp, id) {
-    var text = document.getElementById(id).innerHTML;
+    let text = document.getElementById(id).innerHTML;
     console.log(text);
-    var result = regExp.test(text);
+    let result = regExp.test(text);
     return result;
 }
 
 const AandZinTheEndRegExp = /[ая]\s/g;
 const ipInTheText = /\d{1,3}\.\d{1,3}\.255.\d{1,3}/g;
 const ukrainePhoneNumberRegExp = /\+380\d{2}\d{3}\d{2}\d{2}/g;
+const timeRegExp = /^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$/;
 
 
 
@@ -18,7 +19,7 @@ const ukrainePhoneNumberRegExp = /\+380\d{2}\d{3}\d{2}\d{2}/g;
 
 //create function thah recive regExp and id and make highlight the text that match the regExp
 function highlightRegExp(regExp, id) {
-    var text = document.querySelector(`#${id} .text`).innerHTML;
+    let text = document.querySelector(`#${id} .text`).innerHTML;
     console.log(Array.from(text.matchAll(regExp)));
     let newText = text.replace(regExp, '<span style="background: rgb(11, 168, 24, 0.5);">$&</span>');
     document.querySelector(`#${id} .text`).innerHTML = newText;
@@ -27,8 +28,8 @@ function highlightRegExp(regExp, id) {
 
 //create function that check if input equal to regExp
 function checkInput(regExp, id) {
-    var text = document.querySelector(`#${id} input`).value;
-    var result = regExp.test(text);
+    let text = document.querySelector(`#${id} input`).value;
+    let result = regExp.test(text);
     return result;
 }
 
@@ -41,13 +42,14 @@ function changeButtonClassIfUnvalid(id, regExp) {
     }
 }
 
-//function that add listener to ipAdress input
-function addIpAdressListener() {
-    document.querySelector('#checkIfContainsIp input').addEventListener('input', function() {
-        changeButtonClassIfUnvalid('checkIfContainsIp', ipInTheText);
-    });
 
+//function that add listener to time input
+function addTimeListener() {
+    document.querySelector(`#checkIfContainsTime input`).addEventListener('input', function() {
+        changeButtonClassIfUnvalid('checkIfContainsTime', timeRegExp);
+    });
 }
+
 
 //function that add listener to .texthoneNumber input
 function addPhoneNumberListener() {
@@ -64,7 +66,7 @@ function checkInputValue() {
     if (document.querySelector('#checkIfContainsPhoneNumber input').value.length < 4) {
         document.querySelector('#checkIfContainsPhoneNumber input').value = '+380';
     }
-    changeButtonClassIfUnvalid('checkIfContainsIp', ipInTheText);
+    changeButtonClassIfUnvalid('checkIfContainsTime', timeRegExp);
     changeButtonClassIfUnvalid('checkIfContainsPhoneNumber', ukrainePhoneNumberRegExp);
 }
 
@@ -75,7 +77,9 @@ function createListeners() {
     highlightRegExp(AandZinTheEndRegExp, 'findLettersInTheEnd');
     highlightRegExp(ipInTheText, 'findIpAdresses');
     addPhoneNumberListener();
-    addIpAdressListener();
+    addTimeListener();
 }
+
+
 
 export { createListeners };
