@@ -42,4 +42,10 @@
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr 1fr;
             }
+            #regExp {
+                grid-column-end: auto !important;
+            }
+            #regExpGrid {
+                grid-template-columns: 1fr !important;
+            }
         }

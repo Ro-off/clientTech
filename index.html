@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/headerAndNav.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/regExp.css">
+
     <link rel="stylesheet" href="styles/mobile.css">
 
     <link rel="icon" type="image/png" href="/favicon-32x32.png" />
@@ -105,6 +107,29 @@
                     </div>
                 </div>
 
+                <div id="regExp">
+                    <h2>Regular expression</h2>
+                    <div id="regExpGrid">
+                        <div id="findLettersInTheEnd">
+                            <p class="regExpHeaders">Find all "а" and "я" in the end of the text</p class="regExpHeaders">
+                            <p class="text">Скласти регулярні вирази, з допомогою яких можна виконувати пошук у фрагменті тексту (завдання 1-2) або валідацію даних текстового поля (завдання 3) згідно Вашого варіанту. 2. Продемонструвати правильність регулярних виразів
+                                за допомогою використання можливостей JavaScript. При цьому:</p>
+                        </div>
+                        <div id="findIpAdresses">
+                            <p class="regExpHeaders">Find all ip adresses with format а x.x.255.х in the text</p class="regExpHeaders">
+                            <p class="text">Скласти регулярні вирази,192.168.1.1 за допомогою яких можна виконувати пошук у 192.148.255.1 фрагменті тексту (завдання 1-2) або валідацію даних текстового поля (завдання 3) згідно Вашого варіанту. 2. Продемонструвати правильність
+                                регулярних виразів за допомогою використання 192.168.255.1 можливостей 168.168.0.1 JavaScript. При цьому:</p>
+                        </div>
+                        <div id="checkIfContainsIp">
+                            <p class="regExpHeaders">Check if input contains only ip adress with format а x.x.255.х</p class="regExpHeaders">
+                            <input type="text" id="ipAdress" default="192.168.255.1"></input>
+                        </div>
+                        <div id="checkIfContainsPhoneNumber">
+                            <p class="regExpHeaders">Check if input contains only phone number with format +380(хх)хх-хх-хх</p class="regExpHeaders">
+                            <input type="text" id="phoneNumber" default="+380(99)99-99-99"></input>
+                        </div>
+                    </div>
+                </div>
 
                 <div id="pricing">
                     <h2>Pricing</h2>
@@ -223,6 +248,7 @@
             <script src="scripts/authForm.js" type="module"></script>
             <script src="scripts/main.js" type="module"></script>
             <script src="scripts/calculator.js" type="module"></script>
+            <script src="scripts/regExp.js" type="module"></script>
     </body>
 
 </html>

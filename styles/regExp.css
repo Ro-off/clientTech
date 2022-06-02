@@ -1,0 +1,58 @@
+#regExp {
+    grid-column-end: span 2;
+}
+
+#regExpGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 !important;
+    grid-column-gap: 10px;
+    height: max-content;
+}
+
+#regExpGrid div {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#regExp div p {
+    background: rgb(248, 248, 248);
+    padding: 10px;
+    border: solid rgb(11, 168, 24) 2px;
+    height: max-content;
+}
+
+#regExp div .regExpHeaders {
+    width: max-content;
+    padding: 10px;
+    font-size: 1.2em;
+    border: none !important;
+    background: none !important;
+    white-space: wrap;
+    width: 100%;
+    font-weight: bold;
+}
+
+.highlight {
+    background: rgb(248, 248, 248);
+    background: rgba(11, 168, 24, 0.5);
+}
+
+#regExpGrid div input {
+    border: none;
+    border-bottom: solid rgb(11, 168, 24) 2px;
+    background: rgb(248, 248, 248);
+    width: 100%;
+    height: max-content;
+    padding: 10px;
+    font-size: 1em;
+}
+
+#regExpGrid div input:focus {
+    outline: none;
+}
+
+#regExpGrid div input:hover {
+    box-shadow: rgb(11, 168, 24) 0px 1px 1px;
+}
